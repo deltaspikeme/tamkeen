@@ -1,0 +1,41 @@
+{
+  "annotations": {
+    "changelogDate": "20240928152148"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "responseDate",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "UserResponse",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "answer",
+      "otherEntityRelationshipName": "userResponse",
+      "relationshipName": "answer",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "question",
+      "otherEntityRelationshipName": "userResponse",
+      "relationshipName": "question",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "userResponse",
+      "relationshipName": "user",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one",
+      "relationshipWithBuiltInEntity": true
+    }
+  ],
+  "service": "serviceClass"
+}

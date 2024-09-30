@@ -1,0 +1,4 @@
+org.springframework.test.context.ContextCustomizerFactory = com.tamkeen.\
+    backoffice.config.TestContainersSpringContextCustomizerFactory,com.tamkeen.\
+    backoffice.config.RedisTestContainersSpringContextCustomizerFactory,com.\
+    tamkeen.backoffice.config.KafkaTestContainersSpringContextCustomizerFactory

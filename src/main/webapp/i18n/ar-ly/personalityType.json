@@ -1,0 +1,29 @@
+{
+  "tamkeenApp": {
+    "personalityType": {
+      "home": {
+        "title": "Personality Types",
+        "refreshListLabel": "تحديث القائمة",
+        "createLabel": "إنشاء Personality Type جديد",
+        "createOrEditLabel": "إنشاء أو تعديل Personality Type",
+        "search": "البحث عن Personality Type",
+        "notFound": "لم يتم العثور على Personality Types"
+      },
+      "created": "Personality Type جديد تم إنشاؤه بالمعرف { param }",
+      "updated": "Personality Type تم تحديثه بالمعرف { param }",
+      "deleted": "Personality Type تم حذفه بالمعرف { param }",
+      "delete": {
+        "question": "هل أنت متأكد أنك تريد حذف Personality Type { id }؟"
+      },
+      "detail": {
+        "title": "Personality Type"
+      },
+      "id": "ID",
+      "typeCode": "Type Code",
+      "description": "Description",
+      "strengths": "Strengths",
+      "weaknesses": "Weaknesses",
+      "testResult": "Test Result"
+    }
+  }
+}

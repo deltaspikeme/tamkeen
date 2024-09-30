@@ -1,0 +1,40 @@
+{
+  "annotations": {
+    "changelogDate": "20240928152150"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "typeCode",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "4",
+      "fieldValidateRulesMinlength": "4"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "TextBlob"
+    },
+    {
+      "fieldName": "strengths",
+      "fieldType": "TextBlob"
+    },
+    {
+      "fieldName": "weaknesses",
+      "fieldType": "TextBlob"
+    }
+  ],
+  "name": "PersonalityType",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "testResult",
+      "otherEntityRelationshipName": "personalityType",
+      "relationshipName": "testResult",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

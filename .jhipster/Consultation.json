@@ -1,0 +1,36 @@
+{
+  "annotations": {
+    "changelogDate": "20240928152152"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "consultantName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "consultationDate",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "notes",
+      "fieldType": "TextBlob"
+    }
+  ],
+  "name": "Consultation",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "consultant",
+      "otherEntityRelationshipName": "consultation",
+      "relationshipName": "consultant",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one",
+      "relationshipWithBuiltInEntity": true
+    }
+  ],
+  "service": "serviceClass"
+}

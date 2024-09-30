@@ -1,0 +1,28 @@
+{
+  "tamkeenApp": {
+    "personalityTest": {
+      "home": {
+        "title": "Personality Tests",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Personality Test",
+        "createOrEditLabel": "Create or edit a Personality Test",
+        "search": "Search for Personality Test",
+        "notFound": "No Personality Tests found"
+      },
+      "created": "A new Personality Test is created with identifier { param }",
+      "updated": "A Personality Test is updated with identifier { param }",
+      "deleted": "A Personality Test is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Personality Test { id }?"
+      },
+      "detail": {
+        "title": "Personality Test"
+      },
+      "id": "ID",
+      "testName": "Test Name",
+      "description": "Description",
+      "question": "Question",
+      "testResult": "Test Result"
+    }
+  }
+}

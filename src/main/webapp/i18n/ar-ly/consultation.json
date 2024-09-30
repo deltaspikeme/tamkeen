@@ -1,0 +1,28 @@
+{
+  "tamkeenApp": {
+    "consultation": {
+      "home": {
+        "title": "Consultations",
+        "refreshListLabel": "تحديث القائمة",
+        "createLabel": "إنشاء Consultation جديد",
+        "createOrEditLabel": "إنشاء أو تعديل Consultation",
+        "search": "البحث عن Consultation",
+        "notFound": "لم يتم العثور على Consultations"
+      },
+      "created": "Consultation جديد تم إنشاؤه بالمعرف { param }",
+      "updated": "Consultation تم تحديثه بالمعرف { param }",
+      "deleted": "Consultation تم حذفه بالمعرف { param }",
+      "delete": {
+        "question": "هل أنت متأكد أنك تريد حذف Consultation { id }؟"
+      },
+      "detail": {
+        "title": "Consultation"
+      },
+      "id": "ID",
+      "consultantName": "Consultant Name",
+      "consultationDate": "Consultation Date",
+      "notes": "Notes",
+      "consultant": "Consultant"
+    }
+  }
+}

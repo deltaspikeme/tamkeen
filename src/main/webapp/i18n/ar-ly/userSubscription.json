@@ -1,0 +1,28 @@
+{
+  "tamkeenApp": {
+    "userSubscription": {
+      "home": {
+        "title": "User Subscriptions",
+        "refreshListLabel": "تحديث القائمة",
+        "createLabel": "إنشاء User Subscription جديد",
+        "createOrEditLabel": "إنشاء أو تعديل User Subscription",
+        "search": "البحث عن User Subscription",
+        "notFound": "لم يتم العثور على User Subscriptions"
+      },
+      "created": "User Subscription جديد تم إنشاؤه بالمعرف { param }",
+      "updated": "User Subscription تم تحديثه بالمعرف { param }",
+      "deleted": "User Subscription تم حذفه بالمعرف { param }",
+      "delete": {
+        "question": "هل أنت متأكد أنك تريد حذف User Subscription { id }؟"
+      },
+      "detail": {
+        "title": "User Subscription"
+      },
+      "id": "ID",
+      "subscriptionType": "Subscription Type",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "user": "User"
+    }
+  }
+}

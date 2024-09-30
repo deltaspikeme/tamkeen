@@ -1,0 +1,28 @@
+{
+  "tamkeenApp": {
+    "userSubscription": {
+      "home": {
+        "title": "User Subscriptions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new User Subscription",
+        "createOrEditLabel": "Create or edit a User Subscription",
+        "search": "Search for User Subscription",
+        "notFound": "No User Subscriptions found"
+      },
+      "created": "A new User Subscription is created with identifier { param }",
+      "updated": "A User Subscription is updated with identifier { param }",
+      "deleted": "A User Subscription is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete User Subscription { id }?"
+      },
+      "detail": {
+        "title": "User Subscription"
+      },
+      "id": "ID",
+      "subscriptionType": "Subscription Type",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "user": "User"
+    }
+  }
+}

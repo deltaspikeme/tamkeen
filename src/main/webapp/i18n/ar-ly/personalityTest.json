@@ -1,0 +1,28 @@
+{
+  "tamkeenApp": {
+    "personalityTest": {
+      "home": {
+        "title": "Personality Tests",
+        "refreshListLabel": "تحديث القائمة",
+        "createLabel": "إنشاء Personality Test جديد",
+        "createOrEditLabel": "إنشاء أو تعديل Personality Test",
+        "search": "البحث عن Personality Test",
+        "notFound": "لم يتم العثور على Personality Tests"
+      },
+      "created": "Personality Test جديد تم إنشاؤه بالمعرف { param }",
+      "updated": "Personality Test تم تحديثه بالمعرف { param }",
+      "deleted": "Personality Test تم حذفه بالمعرف { param }",
+      "delete": {
+        "question": "هل أنت متأكد أنك تريد حذف Personality Test { id }؟"
+      },
+      "detail": {
+        "title": "Personality Test"
+      },
+      "id": "ID",
+      "testName": "Test Name",
+      "description": "Description",
+      "question": "Question",
+      "testResult": "Test Result"
+    }
+  }
+}

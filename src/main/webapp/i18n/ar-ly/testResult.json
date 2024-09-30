@@ -1,0 +1,29 @@
+{
+  "tamkeenApp": {
+    "testResult": {
+      "home": {
+        "title": "Test Results",
+        "refreshListLabel": "تحديث القائمة",
+        "createLabel": "إنشاء Test Result جديد",
+        "createOrEditLabel": "إنشاء أو تعديل Test Result",
+        "search": "البحث عن Test Result",
+        "notFound": "لم يتم العثور على Test Results"
+      },
+      "created": "Test Result جديد تم إنشاؤه بالمعرف { param }",
+      "updated": "Test Result تم تحديثه بالمعرف { param }",
+      "deleted": "Test Result تم حذفه بالمعرف { param }",
+      "delete": {
+        "question": "هل أنت متأكد أنك تريد حذف Test Result { id }؟"
+      },
+      "detail": {
+        "title": "Test Result"
+      },
+      "id": "ID",
+      "analysis": "Analysis",
+      "resultDate": "Result Date",
+      "user": "User",
+      "personalityTest": "Personality Test",
+      "personalityType": "Personality Type"
+    }
+  }
+}

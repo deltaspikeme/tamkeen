@@ -1,0 +1,45 @@
+{
+  "annotations": {
+    "changelogDate": "20240928152149"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "analysis",
+      "fieldType": "TextBlob"
+    },
+    {
+      "fieldName": "resultDate",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "TestResult",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "testResult",
+      "relationshipName": "user",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one",
+      "relationshipWithBuiltInEntity": true
+    },
+    {
+      "otherEntityName": "personalityTest",
+      "otherEntityRelationshipName": "testResult",
+      "relationshipName": "personalityTest",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "personalityType",
+      "otherEntityRelationshipName": "testResult",
+      "relationshipName": "personalityType",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

@@ -1,0 +1,110 @@
+// JDL for MBTI Personality Analysis System
+
+// Personality Test entity
+entity PersonalityTest {
+  testName String required,
+  description TextBlob
+}
+
+// Question entity
+entity Question {
+  questionText TextBlob required,
+  questionType QuestionType required
+}
+
+// Enumeration for MBTI Question Types
+enum QuestionType {
+  I_E, // Introversion - Extraversion
+  S_N, // Sensing - Intuition
+  T_F, // Thinking - Feeling
+  J_P  // Judging - Perceiving
+}
+
+// Answer entity
+entity Answer {
+  answerText String required,
+  score Integer required // Scoring related to the dimension
+}
+
+// User Response entity
+entity UserResponse {
+  responseDate Instant required
+}
+
+// Test Result entity (renamed from Result)
+entity TestResult {
+  analysis TextBlob,
+  resultDate Instant required
+}
+
+// Personality Type entity
+entity PersonalityType {
+  typeCode String required unique minlength(4) maxlength(4), // e.g., 'INTJ', 'ENFP'
+  description TextBlob,
+  strengths TextBlob,
+  weaknesses TextBlob
+}
+
+// User Subscription entity (renamed from Subscription)
+entity UserSubscription {
+  subscriptionType SubscriptionType required,
+  startDate LocalDate required,
+  endDate LocalDate required
+}
+
+// Enumeration for Subscription Types
+enum SubscriptionType {
+  MONTHLY,
+  YEARLY
+}
+
+// Consultation entity
+entity Consultation {
+  consultantName String required,
+  consultationDate Instant required,
+  notes TextBlob
+}
+entity Consultant {
+  name String required, // The full name of the consultant
+  expertise String required, // Areas of expertise
+  bio TextBlob, // A detailed biography of the consultant
+  email String required pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/), // Email with validation pattern
+  phone String, // Contact phone number
+  servicesOffered TextBlob // Services that the consultant offers
+}
+// Relationships
+relationship OneToOne {
+  Consultant to User with builtInEntity
+}
+relationship OneToMany {
+  PersonalityTest to Question
+}
+
+relationship OneToMany {
+  Question to Answer
+}
+
+relationship ManyToOne {
+  UserResponse to Answer
+  UserResponse to Question
+  UserResponse to User with builtInEntity
+}
+
+relationship ManyToOne {
+  TestResult to User with builtInEntity
+  TestResult to PersonalityTest
+  TestResult to PersonalityType
+}
+
+relationship ManyToOne {
+  UserSubscription to User with builtInEntity
+}
+
+relationship ManyToOne {
+  Consultation to Consultant with builtInEntity
+}
+
+// Microservice, pagination, and service options
+service all with serviceClass
+paginate all with pagination
+dto all with mapstruct

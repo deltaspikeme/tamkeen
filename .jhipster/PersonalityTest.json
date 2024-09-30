@@ -1,0 +1,37 @@
+{
+  "annotations": {
+    "changelogDate": "20240928152145"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "testName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "TextBlob"
+    }
+  ],
+  "name": "PersonalityTest",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "question",
+      "otherEntityRelationshipName": "personalityTest",
+      "relationshipName": "question",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "testResult",
+      "otherEntityRelationshipName": "personalityTest",
+      "relationshipName": "testResult",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

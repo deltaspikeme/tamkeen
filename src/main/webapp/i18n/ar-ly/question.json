@@ -1,0 +1,29 @@
+{
+  "tamkeenApp": {
+    "question": {
+      "home": {
+        "title": "Questions",
+        "refreshListLabel": "تحديث القائمة",
+        "createLabel": "إنشاء Question جديد",
+        "createOrEditLabel": "إنشاء أو تعديل Question",
+        "search": "البحث عن Question",
+        "notFound": "لم يتم العثور على Questions"
+      },
+      "created": "Question جديد تم إنشاؤه بالمعرف { param }",
+      "updated": "Question تم تحديثه بالمعرف { param }",
+      "deleted": "Question تم حذفه بالمعرف { param }",
+      "delete": {
+        "question": "هل أنت متأكد أنك تريد حذف Question { id }؟"
+      },
+      "detail": {
+        "title": "Question"
+      },
+      "id": "ID",
+      "questionText": "Question Text",
+      "questionType": "Question Type",
+      "answer": "Answer",
+      "personalityTest": "Personality Test",
+      "userResponse": "User Response"
+    }
+  }
+}

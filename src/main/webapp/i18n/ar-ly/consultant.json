@@ -1,0 +1,32 @@
+{
+  "tamkeenApp": {
+    "consultant": {
+      "home": {
+        "title": "Consultants",
+        "refreshListLabel": "تحديث القائمة",
+        "createLabel": "إنشاء Consultant جديد",
+        "createOrEditLabel": "إنشاء أو تعديل Consultant",
+        "search": "البحث عن Consultant",
+        "notFound": "لم يتم العثور على Consultants"
+      },
+      "created": "Consultant جديد تم إنشاؤه بالمعرف { param }",
+      "updated": "Consultant تم تحديثه بالمعرف { param }",
+      "deleted": "Consultant تم حذفه بالمعرف { param }",
+      "delete": {
+        "question": "هل أنت متأكد أنك تريد حذف Consultant { id }؟"
+      },
+      "detail": {
+        "title": "Consultant"
+      },
+      "id": "ID",
+      "name": "Name",
+      "expertise": "Expertise",
+      "bio": "Bio",
+      "email": "Email",
+      "phone": "Phone",
+      "servicesOffered": "Services Offered",
+      "user": "User",
+      "consultation": "Consultation"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "tamkeenApp": {
+    "SubscriptionType": {
+      "null": "",
+      "MONTHLY": "MONTHLY",
+      "YEARLY": "YEARLY"
+    }
+  }
+}

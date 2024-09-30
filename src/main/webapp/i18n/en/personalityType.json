@@ -1,0 +1,29 @@
+{
+  "tamkeenApp": {
+    "personalityType": {
+      "home": {
+        "title": "Personality Types",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Personality Type",
+        "createOrEditLabel": "Create or edit a Personality Type",
+        "search": "Search for Personality Type",
+        "notFound": "No Personality Types found"
+      },
+      "created": "A new Personality Type is created with identifier { param }",
+      "updated": "A Personality Type is updated with identifier { param }",
+      "deleted": "A Personality Type is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Personality Type { id }?"
+      },
+      "detail": {
+        "title": "Personality Type"
+      },
+      "id": "ID",
+      "typeCode": "Type Code",
+      "description": "Description",
+      "strengths": "Strengths",
+      "weaknesses": "Weaknesses",
+      "testResult": "Test Result"
+    }
+  }
+}

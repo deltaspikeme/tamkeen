@@ -1,0 +1,38 @@
+{
+  "annotations": {
+    "changelogDate": "20240928152147"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "answerText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "score",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "Answer",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "question",
+      "otherEntityRelationshipName": "answer",
+      "relationshipName": "question",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "userResponse",
+      "otherEntityRelationshipName": "answer",
+      "relationshipName": "userResponse",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

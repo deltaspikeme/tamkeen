@@ -1,0 +1,28 @@
+{
+  "tamkeenApp": {
+    "userResponse": {
+      "home": {
+        "title": "User Responses",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new User Response",
+        "createOrEditLabel": "Create or edit a User Response",
+        "search": "Search for User Response",
+        "notFound": "No User Responses found"
+      },
+      "created": "A new User Response is created with identifier { param }",
+      "updated": "A User Response is updated with identifier { param }",
+      "deleted": "A User Response is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete User Response { id }?"
+      },
+      "detail": {
+        "title": "User Response"
+      },
+      "id": "ID",
+      "responseDate": "Response Date",
+      "answer": "Answer",
+      "question": "Question",
+      "user": "User"
+    }
+  }
+}

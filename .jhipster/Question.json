@@ -1,0 +1,46 @@
+{
+  "annotations": {
+    "changelogDate": "20240928152146"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "questionText",
+      "fieldType": "TextBlob",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "questionType",
+      "fieldType": "QuestionType",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "I_E,S_N,T_F,J_P"
+    }
+  ],
+  "name": "Question",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "answer",
+      "otherEntityRelationshipName": "question",
+      "relationshipName": "answer",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "personalityTest",
+      "otherEntityRelationshipName": "question",
+      "relationshipName": "personalityTest",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "userResponse",
+      "otherEntityRelationshipName": "question",
+      "relationshipName": "userResponse",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

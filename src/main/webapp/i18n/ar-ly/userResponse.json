@@ -1,0 +1,28 @@
+{
+  "tamkeenApp": {
+    "userResponse": {
+      "home": {
+        "title": "User Responses",
+        "refreshListLabel": "تحديث القائمة",
+        "createLabel": "إنشاء User Response جديد",
+        "createOrEditLabel": "إنشاء أو تعديل User Response",
+        "search": "البحث عن User Response",
+        "notFound": "لم يتم العثور على User Responses"
+      },
+      "created": "User Response جديد تم إنشاؤه بالمعرف { param }",
+      "updated": "User Response تم تحديثه بالمعرف { param }",
+      "deleted": "User Response تم حذفه بالمعرف { param }",
+      "delete": {
+        "question": "هل أنت متأكد أنك تريد حذف User Response { id }؟"
+      },
+      "detail": {
+        "title": "User Response"
+      },
+      "id": "ID",
+      "responseDate": "Response Date",
+      "answer": "Answer",
+      "question": "Question",
+      "user": "User"
+    }
+  }
+}
